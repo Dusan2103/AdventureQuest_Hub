@@ -1,0 +1,46 @@
+/* Chart Container */
+.charts-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2%;  /* Razmak između grafikona */
+    box-sizing: border-box;
+    margin: 0 auto; /* Centriranje kontejnera */
+  }
+  
+  /* Chart */
+  .chart {
+    flex: 0 0 48%; /* Dodelite 48% širine za svaki grafikon */
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin-top: 5px; /* Smanjen razmak između grafikona */
+    min-width: 300px;
+    max-width: 700px; /* Proširivanje maksimalne širine grafikona */
+    height: auto;
+  }
+  
+  /* Canvas */
+  canvas {
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%; /* Proširuje canvas da koristi celu širinu roditeljskog .chart */
+    height: 100%; /* Proširuje canvas da koristi celu visinu roditeljskog .chart */
+  }
+  
+  /* Chart Container za drugi set */
+  .charts-container .chart-placeholder {
+    background-color: var(--quaternary-color);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px; /* Možete prilagoditi visinu placeholdera */
+    width: 100%; /* Popunjava celu širinu kontejnera */
+    margin-top: 20px;
+  }
+  

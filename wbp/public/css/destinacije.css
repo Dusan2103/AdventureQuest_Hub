@@ -1,0 +1,156 @@
+/* Forma za dodavanje komentara */
+:root {
+    /* Colors */
+    --primary-color: #113f67; 
+    --secondary-color:#f2f2f2; 
+    --tertiary-color: #9fd3c7; 
+    --quaternary-color: #ded5c4; 
+    --text-color: black;
+  }
+
+.destination .comment-form {
+    margin-top: 20px;
+    
+  }
+  .destination .comment-form input[type="text"],
+  .destination .comment-form textarea {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--quaternary-color);
+  }
+  
+  .destination .comment-form textarea {
+    height: 100px;
+  }
+  
+  .destination .comment-form button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .destination .comment-form button:hover {
+    background-color: var(--tertiary-color);
+  }
+  
+  /* Forma za dodavanje destinacija */
+  
+  .add-destination-form-container {
+    margin: 20px auto; 
+    padding: 20px; 
+    border-radius: 10px; 
+    background-color: var(--secondary-color); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    width: 80%; 
+  }
+  
+  .add-destination-form {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  
+  .add-destination-form input[type="text"],
+  .add-destination-form textarea,
+  .add-destination-form input[type="url"],
+  .add-destination-form input[type="file"],
+  .add-destination-form button {
+    flex: 1; 
+    margin-bottom: 10px; 
+    margin-left: 10px; 
+    margin-right: 10px; 
+    padding: 15px; 
+    border-radius: 5px; 
+    border: 1px solid var(--primary-color); 
+    background-color: var(--secondary-color);
+    color: var(--text-color); 
+  }
+  
+  .add-destination-form textarea {
+    flex-basis: 100%;
+  }
+  
+  .add-destination-form button {
+    margin-top: 20px; 
+    padding: 20px; 
+    flex: 1; 
+    margin-top: 5px; 
+    padding: 20px 20px; 
+    background-color: var(--secondary-color); 
+    color: black; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    }
+  
+  
+  .add-destination-form button:hover {
+    background-color: var(--primary-color); 
+  }
+  
+  /* DETALJI DESTINACIJE */
+
+  .destination-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .destination-details__image {
+    width: auto;
+    height: 400px; 
+    border-radius: 10% 10% 10% 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .text-area {
+    width: 40%;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    padding: 4px;
+    margin-top: 0.3em;
+    margin-bottom: 0.2em;
+  }
+  
+  .destination-details__info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2; /* Boja pozadine */
+    padding: 10px 20px;
+    border-radius: 0 0 5% 5%;
+  }
+  
+  .destination-details__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .destination-details__info-left {
+    text-align: left;
+  }
+  
+  .destination-details__info-right {
+    text-align: right;
+  }
+
+  .destination-details__title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .destination-details__description {
+    color: var(--primery-color); 
+    text-align: left;
+  }
+  

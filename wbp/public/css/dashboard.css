@@ -1,0 +1,246 @@
+:root {
+  --primary-color: #0e2a47;  /* Tamnija plava boja za pozadinu */
+  --secondary-color: #f8f9fe; /* Svetla boja za pozadinu */
+  --tertiary-color: #5e8c7e;  /* Akcent boja */
+  --quaternary-color: #e6e8f1; /* Dodatna svetla boja */
+}
+
+/* Global Styles */
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--primary-color); /* Pozadina stranice u tamnoj plavoj */
+  margin: 0;
+  padding: 0;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  height: calc(100% - 20px);
+  width: 220px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 24px; /* Smanjeno sa 30px na 24px (20% manje) */
+  transform: scale(0.8); /* Smanjuje veličinu loga za 20% */
+}
+
+
+/* Nav Items */
+.sidebar .nav-section {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 8px;
+  color: white;
+}
+
+.sidebar .nav-section h3 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.sidebar .nav-section .nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar .nav-section .nav li {
+  padding: 12px;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar .nav-section .nav li a {
+  text-decoration: none;
+  color: white;  /* Text color is white */
+  display: block;
+}
+
+.sidebar .nav-section .nav li a:hover {
+  background-color: #000; /* Hover effect will be black */
+  color: white;  /* Text remains white on hover */
+  border-radius: 5px;
+}
+
+/* Main Content Area */
+.container {
+  border-radius: 10px;
+  margin-left: 250px;
+  padding: 20px;
+  background-color: white;
+}
+
+/* Table Placeholder */
+.table-placeholder {
+  background-color: var(--quaternary-color);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.table th, .table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Top Navbar */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 10px 20px;
+}
+
+/* Editable Fields */
+.editable input, .editable select {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 8px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-warning {
+  background-color: #ff9800;
+  color: white;
+}
+
+.btn-save {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #f44336;
+  color: white;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .container {
+    margin-left: 220px;
+  }
+
+  .navbar {
+    padding: 10px 15px;
+  }
+}
+/* Main Container */
+.container {
+  width: 70%; /* Smanjuje širinu kontejnera */
+  margin-left: 20%; /* Centriranje kontejnera */
+  margin-right: 20%;
+  position: relative; /* Pozicionira kontejner unutar roditelja */
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Dodaje senku za efekat podizanja */
+  margin-top: 1.0%; /* Uklanja gornji razmak */
+}
+
+.nav_links {
+  position: fixed;
+  list-style-type: none;
+  align-items: left;
+  text-align: center;
+  top: 0; 
+  left: 20px; 
+  width: 200px; 
+  height: 90%; 
+  background-color: var(--secondary-color); 
+  color: var(--primary-color); 
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  gap: 15px; 
+}
+
+/* Link Styling */
+.nav_links a {
+  text-decoration: none;
+  color: var(--primary-color); /* Tekst u primarnoj boji */
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease; /* Dodaje prelaz na hover */
+}
+
+/* Hover Effect */
+.nav_links a:hover {
+  background-color: var(--primary-color); /* Efekat hovera */
+  color: white; /* Promena boje teksta */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%; /* Smanjuje širinu kontejnera na manjim ekranima */
+    margin-left: 5%; /* Udaljenost od leve strane */
+    margin-right: 5%; /* Udaljenost od desne strane */
+  }
+
+  .nav_links {
+    width: 100%; /* Širina bočne trake postaje 100% na manjim ekranima */
+    top: 0; /* Pozicionira traku na vrh */
+    height: auto; /* Visina se prilagođava sadržaju */
+  }
+}
+
+
+/* Canvas */
+canvas {
+  background-color: white;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%; /* Proširuje canvas da koristi celu širinu roditeljskog .chart */
+  height: 100%; /* Proširuje canvas da koristi celu visinu roditeljskog .chart */
+}

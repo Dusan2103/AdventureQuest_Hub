@@ -1,0 +1,40 @@
+RewriteEngine On
+RewriteBase /
+
+# Preusmeravanje kratkih URL-ova na odgovarajuće PHP fajlove
+RewriteRule ^Pocetna$ wbp/index.php [L]
+RewriteRule ^Destinacije$ wbp/model/destination-search.php [L]
+RewriteRule ^Nalog$ wbp/model/client-account.php [L]
+RewriteRule ^Kontakt$ wbp/model/contact.php [L]
+RewriteRule ^Detalji$ wbp/model/destination-details.php [L]
+RewriteRule ^Dodaj$ wbp/add/add-destination.php [L]
+
+# Preusmeravanje za AdminControl i MyReports
+RewriteRule ^AdminControl$ wbp/admin/adminControl.php [L]
+RewriteRule ^MyReports$ wbp/admin/myReports.php [L]
+
+# Preusmeravanje CSS fajlova
+RewriteRule ^public/css/styles.css$ wbp/public/css/styles.css [L]
+
+# Preusmeravanje slika
+RewriteRule ^public/images/(.*)$ wbp/public/images/$1 [L]
+
+# Pretvaranje PHP fajlova u kratke URL-ove
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^Pocetna$ wbp/index.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^Destinacije$ /wbp/model/destination-search.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^Nalog$ /wbp/model/client-account.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^Kontakt$ /wbp/model/contact.php [L]
+
+# Preusmeravanje za AdminDashboard na dashboard.php
+RewriteRule ^AdminDashboard$ wbp/admin/dashboard.php [L]

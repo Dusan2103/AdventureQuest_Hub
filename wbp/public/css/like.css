@@ -1,0 +1,51 @@
+:root {
+
+  --primary-color: #113f67; 
+  --secondary-color: #f2f2f2; 
+  --tertiary-color: #9fd3c7; 
+  --quaternary-color: #ded5c4; 
+  --text-color: black;
+}
+
+
+.reaction-buttons {
+  display: flex;
+  justify-content: flex-end;  
+  gap: 10px;
+}
+
+.reaction-btn {
+  background: none;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  font-style: normal;
+  border-radius: 10px; 
+  display: flex;
+  align-items: center; 
+  gap: 5px;
+  min-width: 40px; /* Postavite minimalnu širinu dugmeta */
+  max-width: 120px; /* Obezbeđuje da dugme bude iste širine */
+  justify-content: space-between; /* Razmak između ikone i broja */
+}
+
+.reaction-btn i {
+  font-size: 16px;
+}
+
+.reaction-btn span {
+  min-width: 20px; /* Obezbeđuje da broj bude dovoljno prostora */
+}
+
+.reaction-btn:hover {
+  background-color: var(--primary-color); 
+  color: white; 
+  border-color: #0056b3;  
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);  
+}
+
+.reaction-btn:hover i {
+  color: white; 
+}

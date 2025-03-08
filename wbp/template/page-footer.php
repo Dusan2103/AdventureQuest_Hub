@@ -1,0 +1,3 @@
+<footer>
+OUTDOOR ADVENTURES
+</footer>

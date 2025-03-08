@@ -1,0 +1,67 @@
+:root {
+    /* Colors */
+    --primary-color: #113f67; 
+    --secondary-color:#f2f2f2; 
+    --tertiary-color: #9fd3c7; 
+    --quaternary-color: #ded5c4; 
+    --text-color: black;
+  }
+
+
+.comments-area{
+  padding-top: 0;
+}
+.comments-section {
+    width: 60%;
+    border-radius: 10px;
+    margin: 100px auto;
+    background-color: var(--secondary-color); 
+    padding: 20px; 
+    margin-top: 2%;
+    margin-bottom: 10%;
+  }
+  .comments-header {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    padding-top: 0;
+    margin-top: 0;
+    width: 100%;
+  }
+  
+  .comment {
+    background-color: var(--quaternary-color); 
+    border-radius: 10px; 
+    padding: 15px; 
+    margin-bottom: 15px; 
+  }
+  
+  .comment__username {
+    font-weight: bold; 
+    margin-bottom: 5px; 
+  }
+  
+  .comment-time {
+    font-size: 12px;
+    color: var(--primary-color); 
+    margin-bottom: 10px; 
+  }
+  
+  .comment__message {
+    margin-bottom: 10px; 
+  }
+  
+  .comment__delete-button {
+    font-size: 14px;
+    font-style: normal;
+    border-radius: 10px; 
+    padding: 5px 10px;
+    color: var(--primary-color);
+  }
+  
+  .comment__delete-button:hover {
+    background-color: #d00; 
+    color: white;
+    border-color: #b30000; 
+    box-shadow: 0 4px 6px rgba(255, 0, 0, 0.3);
+  }

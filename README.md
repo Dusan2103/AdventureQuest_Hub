@@ -1,5 +1,3 @@
-It seems like you want me to rewrite or improve the description for AdventureQuest Hub. Here's a polished and more engaging version of the text in English, keeping the structure intact and enhancing clarity and appeal. If you meant something else by "bolje ga napisi" (which translates from Serbian to "write it better"), feel free to clarify!
-
 AdventureQuest Hub
 AdventureQuest Hub – Your gateway to discovering local hiking tours in Serbia.
 
@@ -49,4 +47,4 @@ Contributing
 We’d love your input! Fork the repository, make your enhancements, and submit a pull request to join the adventure.
 
 License
-This project is proudly licensed under the MIT License.****
+This project is proudly licensed under the MIT License.
